@@ -14,4 +14,21 @@ Before you begin, ensure you have met the following requirements:
 
 - Node.js installed
 - MongoDB installed and running
-- Environment variables configured (see [Configuration](#configuration))
+- Environment variables configured
+
+## API Endpoints
+
+### `GET /api/hello`
+Returns a greeting JSON object.
+
+### `POST /api/shorturl`
+Shortens a URL and returns the original and shortened URLs.
+
+### `GET /api/shorturl/:input`
+Redirects users to the original URL based on the shortened input.
+
+## Database
+The API uses MongoDB to store original URLs and their corresponding short identifiers. The `URL` schema includes fields for `original` and `short`.
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow the standard GitHub fork and pull request workflow.
